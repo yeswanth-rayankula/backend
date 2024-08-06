@@ -1,6 +1,5 @@
 import express from "express";
 import { config } from "dotenv";
-import { get } from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
@@ -31,7 +30,9 @@ app.use(
      })
 )
 
-
+app.get("/",(req,res)=>{
+    res.send("deploy success");
+})
 app.use("/api/v1/message",messagerouter);
 app.use("/api/v1/user",userRouter);
 app.use("/api/v1/appointment",appointmentRouter);
