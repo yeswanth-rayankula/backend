@@ -1,5 +1,5 @@
 import { catchAsyncErrors } from "../middlewares/catchasync.js";
-import {Message}  from "../models/messageSchema.js";
+import {Message}  from "../models/messageschema.js";
 import validator from "validator";
 
 export const sendmessage = catchAsyncErrors(async (req, res, next) => {
