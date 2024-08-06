@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import validator from "validator";
-const messageschema=new mongoose.Schema({
+
+const messageschema = new mongoose.Schema({
     firstname:{
          type:String,
          required:true,
@@ -26,8 +27,6 @@ const messageschema=new mongoose.Schema({
         required:true,
         minLength:[3,"message contains atleast 3 words"]
     }
-
-
 });
 
-export const Message = mongoose.model("meassage",messageschema)
+export const Message = mongoose.model("message",messageschema)

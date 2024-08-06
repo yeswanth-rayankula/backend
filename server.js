@@ -7,6 +7,8 @@ cloudinary.v2.config({
      api_secret:process.env.cloudinary_api_secret,
 
 })
-
 const port = process.env.PORT ; 
-app.listen(port);
+
+app.listen(port,()=>{
+     console.log("deploy successful");
+});
