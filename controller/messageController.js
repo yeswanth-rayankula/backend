@@ -1,5 +1,4 @@
 import { catchAsyncErrors } from "../middlewares/catchasync.js";
-import Errorhandler from "../middlewares/error.js";
 import { Message } from "../models/messageSchema.js";
 import validator from "validator";
 
